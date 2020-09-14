@@ -10,7 +10,7 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="The-internet" target="1.8" />
+      <module name="The-internet" target="1.11" />
     </bytecodeTargetLevel>
   </component>
 </project>
