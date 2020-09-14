@@ -15,7 +15,7 @@ import reportHelper.report.ReportManager;
 public abstract class BaseTest {
     protected WebDriver webDriver;
     private String url = "https://the-internet.herokuapp.com/";
-    private String browser = "firefox";
+    private String browser = "chrome";
 
 
     @BeforeSuite

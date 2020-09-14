@@ -17,6 +17,5 @@ public class Login {
         Enter.text(driver, FormAuthenticationUI.password, passWord);
         Click.on(driver, FormAuthenticationUI.loginButton);
         ScreenShotHelper.takeScreenShotAndAdToHTMLReport(driver, Status.INFO, "Login");
-
     }
 }
