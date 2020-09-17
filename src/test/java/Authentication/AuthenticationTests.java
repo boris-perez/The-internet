@@ -14,8 +14,7 @@ public class AuthenticationTests extends BaseTest {
     public void authenticationSuccessfulTests() {
         Login.as(webDriver, "tomsmith", "SuperSecretPassword!");
         Assert.assertTrue(IsLoginSuccessMessage.visible(webDriver));
-        Assert.assertEquals(IsLoginSuccessMessage.getTextSuccess(webDriver), "You logged into a secure area!\n" +
-                "×");
+        Assert.assertEquals(IsLoginSuccessMessage.getTextSuccess(webDriver), "You logged into a secure area!\n" + "×");
     }
 
     @Test

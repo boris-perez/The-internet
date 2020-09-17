@@ -1,4 +1,4 @@
-package reportHelper.report;
+package Helpers.report;
 
 import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.ExtentTest;

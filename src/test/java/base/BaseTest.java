@@ -1,6 +1,9 @@
 package base;
 
+import Helpers.helper.ScreenShotHelper;
+import Helpers.report.ReportManager;
 import com.aventstack.extentreports.Status;
+import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
@@ -9,13 +12,11 @@ import org.testng.annotations.AfterMethod;
 import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeSuite;
-import reportHelper.helper.ScreenShotHelper;
-import reportHelper.report.ReportManager;
 
 public abstract class BaseTest {
     protected WebDriver webDriver;
     private String url = "https://the-internet.herokuapp.com/";
-    private String browser = "chrome";
+    private String browser = "firefox";
 
 
     @BeforeSuite
@@ -29,11 +30,11 @@ public abstract class BaseTest {
 
         switch (browser) {
             case "chrome":
-                System.setProperty("webdriver.chrome.driver", "resources/chromedriver.exe");
+                WebDriverManager.chromedriver().setup();
                 webDriver = new ChromeDriver();
                 break;
             case "firefox":
-                System.setProperty("webdriver.gecko.driver", "resources/geckodriver.exe");
+                WebDriverManager.firefoxdriver().setup();
                 webDriver = new FirefoxDriver();
                 break;
             default:

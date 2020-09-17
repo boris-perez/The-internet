@@ -1,11 +1,11 @@
-package reportHelper.helper;
+package Helpers.helper;
 
 import com.aventstack.extentreports.MediaEntityBuilder;
 import com.aventstack.extentreports.Status;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
-import reportHelper.report.ReportManager;
+import Helpers.report.ReportManager;
 
 public class ScreenShotHelper {
     public static String takeScreenShot(WebDriver webDriver) {

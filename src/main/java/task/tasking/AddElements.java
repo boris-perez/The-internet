@@ -3,7 +3,7 @@ package task.tasking;
 import actions.Click;
 import com.aventstack.extentreports.Status;
 import org.openqa.selenium.WebDriver;
-import reportHelper.helper.ScreenShotHelper;
+import Helpers.helper.ScreenShotHelper;
 import ui.AddRemoveUI;
 import ui.HomePageUI;
 

@@ -4,7 +4,7 @@ import actions.Click;
 import actions.Enter;
 import com.aventstack.extentreports.Status;
 import org.openqa.selenium.WebDriver;
-import reportHelper.helper.ScreenShotHelper;
+import Helpers.helper.ScreenShotHelper;
 import ui.FormAuthenticationUI;
 import ui.HomePageUI;
 
